@@ -1,0 +1,60 @@
+@import 'variables';
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+
+@import 'elements/forms';
+@import 'elements/navbar';
+@import 'elements/transitions';
+
+
+.text-metric-positive {
+    color: #3CC480;
+}
+
+.text-metric-negative {
+    color: #FF4141;
+}
+
+.login-container {
+    padding: 30px;
+    @include media-breakpoint-up(md) { 
+        padding: 100px 50px;
+     }
+     @include media-breakpoint-up(lg) { 
+        padding: 150px 100px;
+     }
+     @include media-breakpoint-up(xl) { 
+        padding: 200px 150px;
+     }
+}
+
+
+.col-100vh {
+    height:100vh;
+}
+
+.mh-100px {
+    max-height: 100px;
+}
+
+@include media-breakpoint-up(md) { 
+    .col-md-100vh {
+        height:100vh;
+    }
+}
+
+.login-container .login-logo {
+    height: 60px !important;
+    fill: #151734 !important;
+}
+
+
+.logo-sidebar {
+    height: 33px !important;
+    fill:white !important;
+}
+
+.form-login {
+    max-width: 350px;
+    margin: 0 auto;
+}

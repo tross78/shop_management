@@ -1,0 +1,70 @@
+// // Body
+$body-bg: #f7f9fb;
+
+
+$font-family-sans-serif:  'DM Sans', sans-serif;
+$headings-font-family: 'Barlow', sans-serif;
+
+$font-weight-normal: 100;
+$font-weight-bold: 400;
+$headings-font-weight: 800;
+
+$input-border-color: #E9E9F0;
+$enable-rounded:   false;
+
+$gray-700: #4D4F5C;
+
+$navbar-light-color:               $gray-700;
+$navbar-light-hover-color:        $gray-700;
+// $navbar-light-active-color: 
+
+$navy-blue: #19236B;
+$dark-blue: #151734;
+
+$enable-rounded:   true;
+
+$theme-colors: (
+  "primary": $navy-blue,
+  "secondary": #ff4136
+);
+
+.custom-checkbox.small .custom-control-label{
+    padding-top: 3px;
+}
+
+.bg-sidebar {
+    background-color: $dark-blue;
+}
+$side-nav-dark-color: theme-color('primary');
+$side-nav-light-color: #FFEE00;
+$side-nav-inactive-color: #A5A4BF;
+$side-nav-hilight-color: #2d2f49;
+
+
+.side-nav {
+    a, a:hover, a:active {
+        color: white;
+    }
+    .nav-item {
+        height: 51px;
+        .nav-link {
+            width: 100%;
+            padding: 1rem 1rem 1rem 0.8rem;
+            border-left: 5px solid transparent;
+            span {
+                text-indent: 0;
+                display: inline-block;
+            }
+            i {
+                color: $side-nav-inactive-color;
+            }
+                &.router-link-exact-active {
+                    border-color: $side-nav-light-color;
+                    background: $side-nav-hilight-color;
+                    i {
+                        color: $side-nav-light-color;
+                    }
+                }
+        }
+    }
+}
